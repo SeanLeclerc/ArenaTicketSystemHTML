@@ -1,0 +1,411 @@
+<! DOCTYPE html>
+<html>
+
+<head>
+<title>Aréna</title>
+</head>
+
+<style>
+
+.head{
+    background: transparent;
+    	  position: relative;
+  top: -111300px;
+  left: 11111111200px;
+ 
+    
+    
+}
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.awesome {
+    	    border-style: solid;
+    	    
+    	
+      
+      font-family: futura;
+      font-style: italic;
+      
+      width:100%;
+      
+      margin: 0 auto;
+      text-align: center;
+      
+      color:#313131;
+      font-size:45px;
+      font-weight: bold;
+      position: absolute;
+      -webkit-animation:colorchange 20s infinite alternate;
+      
+      
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+        
+        color: blue;
+      }
+      
+      10% {
+        
+        color: #8e44ad;
+      }
+      
+      20% {
+        
+        color: #1abc9c;
+      }
+      
+      30% {
+        
+        color: #d35400;
+      }
+      
+      40% {
+        
+        color: blue;
+      }
+      
+      50% {
+        
+        color: #34495e;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #2980b9;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #2980b9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
+      }
+
+
+.btnSweg{
+	
+	  position: relative;
+  top: -300px;
+  left: 1200px;
+	
+	color: #ffffff;
+	background-color: #cc0000;
+	ont-weight: bold;
+	font-size: 24px;
+	text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+
+	 height:200px;
+    width:200px;
+      -webkit-animation:colorchange 20s infinite alternate;
+	
+}
+@-webkit-keyframes colorchange {
+      0% {
+        
+        color: blue;
+      }
+      
+      10% {
+        
+        color: #8e44ad;
+      }
+      
+      20% {
+        
+        color: #1abc9c;
+      }
+      
+      30% {
+        
+        color: #d35400;
+      }
+      
+      40% {
+        
+        color: blue;
+      }
+      
+      50% {
+        
+        color: #34495e;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #2980b9;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #2980b9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
+      }
+
+
+
+.res{
+		  position: relative;
+	  top: -300px;
+  left: 700px;
+	color:#00cc00;	
+		font-weight: bold;
+	font-size: 24px;
+	text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.sous-total{
+			  position: relative;
+	  top: -300px;
+  left: 700px;
+	color: #00d2fc;	
+	font-weight: bold;
+	font-size: 20px;
+	text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+
+}
+
+.btn {
+	width: 30%;
+	height: 150px;
+	font-size: 18px;
+	ont-weight: bold;
+	text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+	    -webkit-animation:colorchange 20s infinite alternate;
+}
+ @-webkit-keyframes colorchange {
+      0% {
+        
+        color: blue;
+      }
+      
+      10% {
+        
+        color: #8e44ad;
+      }
+      
+      20% {
+        
+        color: #1abc9c;
+      }
+      
+      30% {
+        
+        color: #d35400;
+      }
+      
+      40% {
+        
+        color: blue;
+      }
+      
+      50% {
+        
+        color: #34495e;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #2980b9;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #2980b9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
+      }
+
+
+#img_arena {
+	width: 80%;
+	max-width: 700px;
+}
+
+.contenant {
+		width: 50%;
+	height: 150px;
+	text-align: center;
+}
+
+#btn_bleu { background-color: #0066ff; }
+#btn_rouge { background-color: #ff0000; }
+#btn_vert { background-color: #009900; }
+
+</style>
+
+
+
+<script>
+
+var tr = 0;
+var tv = 0;
+var tb = 0;
+var t = 0;
+var tt = 0;
+var bb = 0;
+var br = 0;
+var bv = 0;
+
+function bleu() {
+	document.getElementById("img_arena").src = "arena_bleu.jpg";
+}
+
+function rouge() {
+	document.getElementById("img_arena").src = "arena_rouge.jpg";
+}
+
+function vert() {
+	document.getElementById("img_arena").src = "arena_vert.jpg";
+}
+
+function vide() {
+	document.getElementById("img_arena").src = "arena_vide.jpg";
+}
+
+function ajouter(couleur) {
+	if(couleur == bleu) {
+		if(tt <= 4){
+			if(tb <= 10){
+			tt++;
+			bb++;
+			tb = tb + 10;
+			t = t + 10;
+			document.getElementById("totalB").innerHTML = "Le sous-total pour les billets bleu est de : " + Number(tb) + "$" + " (" + bb + " billet/s)";
+			document.getElementById("resultat").innerHTML = "Le total est de : " + Number(t) + "$" + " (" + tt + " billet/s)";
+			}
+		}
+	}
+	if(couleur == rouge) {
+		if(tt <= 4){
+			if(tr <= 22){
+			tt++;
+			br++;
+			tr = tr + 22;
+			t = t + 22;
+			document.getElementById("totalR").innerHTML = "Le sous-total pour les billets rouge est de : " + Number(tr) + "$" + " (" + br + " billet/s)";
+			document.getElementById("resultat").innerHTML = "Le total est de : " + Number(t) + "$" + " (" + tt + " billet/s)";
+			}
+		}
+	}
+	if(couleur == vert) {
+		if(tt <= 4){
+			if(tv <= 40){
+			tt++;
+			bv++;
+			tv = tv + 40;
+			t = t + 40;
+			document.getElementById("totalV").innerHTML = "Le sous-total pour les billets vert est de : " + Number(tv) + "$" + " (" + bv + " billet/s)";
+			document.getElementById("resultat").innerHTML = "Le total est de : " + Number(t) + "$" + " (" + tt + " billet/s)";
+			}
+		}
+	}
+}
+
+function supprimer() {
+	tr = 0;
+	tv = 0;
+	tb = 0;
+	t = 0;
+	tt = 0;
+	bb = 0;
+	br = 0;
+	bv = 0;
+	document.getElementById("totalV").innerHTML = "";
+	document.getElementById("totalB").innerHTML = "";
+	document.getElementById("totalR").innerHTML = "";
+	document.getElementById("resultat").innerHTML = "";
+}
+
+</script>
+
+<video autoplay loop>
+
+<source src="NHLGG.mp4" type="video/mp4">
+
+</video>
+
+
+
+
+
+<body background="GGWallpaper.jpg" style="font-family:verdana;">
+
+<p class='awesome'>Choisissez Votre Billet</p>
+<h1 class='head'>heading<h1>
+
+
+<p class="contenant">
+<button id="btn_bleu" class="btn" onMouseover="bleu()" onMouseout="vide()" onClick="ajouter(bleu)">+1 BLEU</button>
+<button id="btn_rouge" class="btn" onMouseover="rouge()" onMouseout="vide()" onClick="ajouter(rouge)">+1 ROUGE</button>
+<button id="btn_vert" class="btn" onMouseover="vert()" onMouseout="vide()" onClick="ajouter(vert)">+1 VERT</button>
+</p>
+
+<h1 class='head'>heading<h1>
+
+<p class="contenant"><img id="img_arena" src="arena_vide.jpg"></p>
+
+<p class='sous-total' id='totalB'></p>
+<p class='sous-total' id='totalR'></p>
+<p class='sous-total' id='totalV'></p>
+<p class='res' id='resultat'></p>
+
+<p><button class="btnSweg" id="btn_supprimer" onCLick="supprimer()">Supprimer</button></p>
+
+</body>
+
+
+
+</html>
